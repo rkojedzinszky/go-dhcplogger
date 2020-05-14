@@ -5,7 +5,7 @@ platform:
   os: linux
 
 steps:
-- name: api
+- name: build
   image: plugins/docker
   settings:
     repo: rkojedzinszky/go-dhcplogger

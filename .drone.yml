@@ -5,7 +5,7 @@ name: build-arm32v7
 platform: {arch: arm, os: linux, variant: v7}
 steps:
 - image: plugins/docker
-  name: api
+  name: build
   settings:
     auto_tag: true
     auto_tag_suffix: arm32v7
@@ -19,7 +19,7 @@ name: build-arm64v8
 platform: {arch: arm64, os: linux, variant: v8}
 steps:
 - image: plugins/docker
-  name: api
+  name: build
   settings:
     auto_tag: true
     auto_tag_suffix: arm64v8
@@ -33,7 +33,7 @@ name: build-amd64
 platform: {arch: amd64, os: linux}
 steps:
 - image: plugins/docker
-  name: api
+  name: build
   settings:
     auto_tag: true
     auto_tag_suffix: amd64
