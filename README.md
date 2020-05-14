@@ -1,5 +1,7 @@
 # go-dhcplogger
 
+[![Build Status](https://drone.srv.kojedz.in/api/badges/krichy/go-dhcplogger/status.svg)](https://drone.srv.kojedz.in/krichy/go-dhcplogger)
+
 Package for capturing and logging all sent DHCPACK packets on an interface. May be useful for auditing purposes.
 
 ## Preparations
