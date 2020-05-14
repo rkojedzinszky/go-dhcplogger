@@ -6,6 +6,7 @@ import (
 	"os"
 	"os/signal"
 	"syscall"
+	"time"
 
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/pcap"
@@ -36,7 +37,7 @@ func main() {
 
 	feeder.Run(*workers)
 
-	handle, err := pcap.OpenLive(*iface, 1600, false, pcap.BlockForever)
+	handle, err := pcap.OpenLive(*iface, 1600, false, time.Second)
 	if err != nil {
 		panic(err)
 	}
