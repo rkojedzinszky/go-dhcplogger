@@ -9,6 +9,9 @@ RUN cd /go/src/github.com/rkojedzinszky/go-dhcplogger && go build . && \
 
 FROM alpine:3.12
 
+LABEL org.opencontainers.image.authors "Richard Kojedzinszky <richard@kojedz.in>"
+LABEL org.opencontainers.image.source https://github.com/rkojedzinszky/go-dhcplogger
+
 COPY --from=build /go/src/github.com/rkojedzinszky/go-dhcplogger/go-dhcplogger /
 
 RUN apk --no-cache add libpcap libcap && \
